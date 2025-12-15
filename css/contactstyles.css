@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #EEE2DF; 
+    text-align: center;
+}
+h2 {
+    color:#333;
+    text-align: center;
+    border-bottom: 2px solid #1B2845;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+.contact-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+.contact-section p {
+    margin: 5px 0;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+textarea {
+    resize: vertical;
+}
+
+.location-section {
+    display: flex;
+    flex-direction: row;  /* Makes them stack neatly */
+    gap: 30px;                /* Clean spacing */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;     /* Align checkbox + label perfectly */
+    gap: 5px;
+}
+
+.location-section input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.radio-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+button {
+    background-color: #507255; /* Green color for button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #005f7d;
+}

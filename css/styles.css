@@ -1,0 +1,163 @@
+/*
+ * Ice Cream Shop Color Palette:
+ * Green: #507255 (Deep Teal)
+ * Red: #4A0000 (Oxblood)
+ * Cream: #EEE2DF (Sea Shell)
+ * Blue: #1B2845 (Space Indigo)
+ * Text: #2E2C2F (Shadow Grey)
+ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Light, sweet background color */
+    background-color:#D0CFCF ; /* Very pale/creamy white */
+    color: #2E2C2F; /* Dark grey for text */
+}
+
+/* --- Header Section (Space Indigo) --- */
+header {
+    background-color: #1B2845; /* Space Indigo */
+    color: #EEE2DF;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #4A0000; /* Oxblood separator */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* --- Navigation (Pop of Green) --- */
+nav {
+    background-color: #507255; /* Deep Teal */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #EEE2DF; /* Creamy White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Sunshine Yellow hover effect */
+}
+
+/* --- Main Content --- */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #1B2845; /* Blue for section titles */
+    border-bottom: 3px dashed #4A0000; /* Dashed Red line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Destination List (Yellow Highlights) --- */
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.destination {
+    background-color: #507255; /* Green background */
+    color: #EEE2DF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+.destination-list a,
+.destination-list a:hover,
+.destination-list a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.destination-table {
+    width: 100%;              /* makes the table stretch across the section */
+    border-collapse: collapse;/* cleaner look */
+    margin-top: 20px;         /* spacing from your destination list */
+    text-align: center;       /* centers all text */
+}
+
+.destination-table th,
+.destination-table td {
+    padding: 12px 10px;       /* space inside each cell */
+    border: 1px solid #ccc;   /* optional: gives a clean grid look */
+}
+
+.destination-table th {
+    background-color: #f4f4f4; /* subtle header background */
+    font-weight: bold;
+}
+
+/* --- Specials Section (Extra Pop) --- */
+#specials p {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px;
+    background-color: #EEE2DF; /* Mint Green background */
+    border: 3px solid #1B2845;
+    border-radius: 10px;
+}
+
+#specials strong {
+    color: #507255; /* Green emphasis */
+}
+
+/* --- Footer (Grounded Color) --- */
+footer {
+    background-color: #4A0000; 
+    color: #EEE2DF; /* Cream text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FFD6CC; /* Lighter warm cream-pink for contrast */
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FFFFFF; /* Bright white on hover */
+    text-decoration: underline;
+}

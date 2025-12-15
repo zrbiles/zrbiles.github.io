@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Light, sweet background color */
+    background-color: #D0CFCF ; /* Very pale/creamy white */
+    color: #2E2C2F; /* Dark grey for text */
+}
+
+/* --- Header Section (Space Indigo) --- */
+header {
+    background-color: #1B2845; /* Space Indigo */
+    color: #EEE2DF;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #4A0000; /* Oxblood separator */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* --- Navigation (Pop of Green) --- */
+nav {
+    background-color: #507255; /* Deep Teal */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #EEE2DF; /* Creamy White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Sunshine Yellow hover effect */
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    color: #1B2845;
+    border-bottom: 3px solid #4A0000; /* Add 'solid' to make the border visible */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Center titles */
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.image-row {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    flex-wrap: nowrap !important;  /* Forces one straight line */
+}
+
+@media screen and (max-width: 768px) {
+    .image-row img {
+        width: 48%;  /* 2 images per row on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-row img {
+        width: 100%; /* 1 image per row on phones */
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventurous Atlas Agency</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <body id="top"></body>
+    <header>
+        <h1>Adventurous Atlas Agency</h1>
+        <p>Chart Your Next Great Adventure!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#specials">Special Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="destination">
+            <h2>Destinations</h2>
+            <div class="destination-list">
+                <p class="destination">
+                    <a href="Greece.html">Greece</a>
+                </p>
+                <p class="destination">
+                    <a href="SouthAfrica.html">South Africa</a>
+                </p>
+                <p class="destination">Japan</p>
+                <p class="destination">
+                    <a href="CostaRica.html">Costa Rica</a>
+                </p>
+            </div>
+            <h3>Compare Our Top Destinations</h3>
+    <table class="destination-table">
+        <tr>
+            <th>Destination</th>
+            <th>Price Range</th>
+            <th>Best Time to Visit</th>
+            <th>Trip Style</th>
+        </tr>
+        <tr>
+            <td>Greece</td>
+            <td>$$$</td>
+            <td>May–September</td>
+            <td>Beach & Culture</td>
+        </tr>
+        <tr>
+            <td>Costa Rica</td>
+            <td>$$</td>
+            <td>December–April</td>
+            <td>Adventure & Nature</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>$$$</td>
+            <td>March–April</td>
+            <td>Culture & City</td>
+        </tr>
+        <tr>
+            <td>South Africa</td>
+            <td>$$</td>
+            <td>May–September</td>
+            <td>Safari & Wildlife</td>
+        </tr>
+    </table>
+</section>
+        </section>
+
+        <section id="specials">
+            <h2>Today's Special Travel!</h2>
+            <p>Explore Bali!</p>
+        </section>
+
+        <section id="quiz">
+                <script src="quiz.js"></script>
+        <h2>Find Your Perfect Destination With This Short Quiz!</h2>
+
+<label>Budget:</label>
+<select id="budget">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+</select>
+
+<br><br>
+
+<label>Preferred Climate:</label>
+<select id="climate">
+    <option value="warm">Warm</option>
+    <option value="cool">Cool</option>
+</select>
+
+<br><br>
+
+<button onclick="findDestination()">Find My Destination</button>
+
+<p id="result"></p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Adventurous Atlas Agency | Come visit us!</p>
+        <p>Helpful Resources:</p>
+    <a href="https://www.lonelyplanet.com" target="_blank">Lonely Planet</a> |
+    <a href="https://travel.state.gov" target="_blank">U.S. Passport Info</a> |
+    <a href="https://www.google.com/travel/flights" target="_blank">Google Flights</a>
+    </footer>
+</body>
+</html>

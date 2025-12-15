@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventurous Atlas Agency</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactstyles.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Adventurous Atlas Agency</h1>
+        <p>Chart Your Next Great Adventure!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#specials">Special Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div class="container">
+        <h2>✈️ Contact Us - Adventurous Atlas Agency</h2>
+        <p style="text-align: center;">We'd love to hear from you! Whether you have a question about our destinations, want to book us for travel, or just want to say hello, here are the best ways to get in touch.</p>
+
+        <div class="contact-section">
+            <h2>📍 Visit Our Location</h2>
+            <p>Stop by for a chat!</p>
+            <p><strong>Address:</strong> 1700 Moore Street Huntingdon PA 16652</p>
+            <p><strong>Operating Hours:</strong>Mon-Thurs: 8 AM - 5:30 PM, Fri-Sat: 12 PM - 10 PM</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>📞 Call Us</h2>
+            <p>For immediate questions regarding travel, hours, or current destinations.</p>
+            <p><strong>Phone Number:</strong> <a href="tel:[Insert Phone Number Here]">(555) 123-4567</a></p>
+        </div>
+
+        <div class="contact-section">
+            <h2>📧 Send Us an Email</h2>
+            <p>For feedback, or general questions, please send us a detailed message.</p>
+            <p><strong>General Inquiries:</strong> <a href="mailto:info@[atlasagency].com">info@[atlasagency].com</a></p>
+            <p><strong>Feedback:</strong> <a href="mailto:feedback@[atlasagency].com">feedback@[atlasagency].com</a></p>
+        </div>
+
+        <div class="contact-section">
+            <h2>📱 Connect on Social Media</h2>
+            <p>Follow us for the latest traveler updates, promotions, and photos!</p>
+            <ul>
+                <li><strong>Facebook:</strong> <a href="[Insert Facebook Link]" target="_blank">[AAtlas.Agency]</a></li>
+                <li><strong>Instagram:</strong> <a href="[Insert Instagram Link]" target="_blank">[AAtlas.Agency]</a></li>
+                <li><strong>X (formerly Twitter):</strong> <a href="[Insert X Link]" target="_blank">[AAtlas.Agency]</a></li>
+            </ul>
+        </div>
+
+    
+
+        <div class="contact-section">
+            <h2>📝 Quick Contact Form</h2>
+            <form action="thankyou.html">
+
+                <p id="greeting" style="font-weight:bold; text-align:center;"></p>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required oninput="greetUser()">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label>Select Location or Locations of Interest:</label>
+
+<div class="location-section">
+
+    <div class="check-item">
+        <input type="checkbox" id="greece" name="greece" onclick="showSelectedDestinations()">
+        <label for="greece">Greece</label>
+    </div>
+
+    <div class="check-item">
+        <input type="checkbox" id="costarica" name="costarica" onclick="showSelectedDestinations()">
+        <label for="costarica">Costa Rica</label>
+    </div>
+
+    <div class="check-item">
+        <input type="checkbox" id="southafrica" name="southafrica" onclick="showSelectedDestinations()">
+        <label for="southafrica">South Africa</label>
+    </div>
+
+    <div class="check-item">
+        <input type="checkbox" id="japan" name="japan" onclick="showSelectedDestinations()">
+        <label for="japan">Japan</label>
+    </div>
+
+    <div class="check-item">
+        <input type="checkbox" id="bali" name="bali" onclick="showSelectedDestinations()">
+        <label for="bali">Bali</label>
+    </div>
+
+    <!-- Paragraph that updates using innerHTML -->
+    <p id="dest-output" style="font-style:italic; text-align:center; margin-top:10px;"></p>
+
+</div> <!-- END OF LOCATION SECTION -->
+<br>
+
+<!-- RADIO QUESTION SHOULD BE BELOW THIS LINE -->
+
+<label>Have you traveled outside the U.S. before?</label>
+
+        <div class="radio-section">
+            <div class="radio-item">
+                <input type="radio" id="travel-yes" name="traveled" value="yes">
+                 <label for="travel-yes">Yes</label>
+            </div>
+
+            <div class="radio-item">
+                <input type="radio" id="travel-no" name="traveled" value="no">
+                 <label for="travel-no">No</label>
+            </div>
+        </div>  <!-- END OF RADIO SECTION -->
+</div>
+            
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                
+                <button type="reset">Reset</button>
+                <button type="submit" onclick="return checkTravelExperience()">Send Message</button>
+            </form>
+        </div>
+
+        <hr>
+        <p style="text-align: center;">We look forward to hearing from you and sharing an amazing adventure!</p>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Adventurous Atlas Agency! | Come visit us!</p>
+    </footer>
+    <script src="Quiz.js"></script>  <!-- ADD THIS -->
+</body>
+</html>
